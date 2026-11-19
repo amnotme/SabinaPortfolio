@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "monogram": "SK.",
+    "name": "Sabina Kunkayeva",
+    "firstName": "Sabina",
+    "lastName": "Kunkayeva",
+    "location": "Almaty, Kazakhstan",
+    "headline": "Finance & Big Data Analytics Student | FinTech Researcher",
+    "availability": "Open to Finance, FinTech & Analytics Internships",
+    "portraitUrl": "/sabina-portrait.jpg",
+    "portraitAlt": "Portrait of Sabina Kunkayeva",
+    "heroSummary": "Undergraduate Finance scholar with a Big Data Analytics minor at KIMEP University, combining quantitative rigor with market research experience at Samsung Electronics Central Eurasia.",
+    "editorialNote": "Bridging financial fundamentals, consumer payment research, and data-driven operations across Central Asia's evolving FinTech ecosystem."
+  },
+  "navigation": [
+    { "label": "About", "href": "#about" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Leadership", "href": "#leadership" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "metrics": [
+    {
+      "id": "gpa",
+      "value": "3.90",
+      "unit": "/ 4.33",
+      "label": "Academic Standing",
+      "sublabel": "GPA at KIMEP University"
+    },
+    {
+      "id": "ielts",
+      "value": "7.0",
+      "unit": "C1",
+      "label": "IELTS Academic",
+      "sublabel": "English Proficiency · Listening 8.0"
+    },
+    {
+      "id": "samsung",
+      "value": "Samsung",
+      "label": "FinTech Research",
+      "sublabel": "Digital Wallets in Kazakhstan"
+    },
+    {
+      "id": "graduation",
+      "value": "2029",
+      "unit": "BSc",
+      "label": "Expected Graduation",
+      "sublabel": "Finance · Minor in Big Data Analytics"
+    }
+  ],
+  "experience": {
+    "eyebrow": "01 / Experience & Research",
+    "title": "Applied Market Intelligence & Analytics Operations",
+    "subtitle": "Translating consumer trends, operational metrics, and regional FinTech dynamics into structured recommendations.",
+    "items": [
+      {
+        "id": "samsung-fintech",
+        "index": "01",
+        "role": "Research Assistant",
+        "organization": "Samsung Electronics Central Eurasia",
+        "location": "Almaty, Kazakhstan",
+        "period": "2024",
+        "focus": "Kazakhstan FinTech & Digital Payments Research",
+        "highlights": [
+          "Conducted market research evaluating the adoption and projected impact of digital wallets on Kazakhstan's FinTech landscape.",
+          "Synthesized industry trends, consumer adoption drivers, and competitive insights into structured strategic findings."
+        ],
+        "tags": ["FinTech", "Market Research", "Digital Wallets", "Strategy"]
+      },
+      {
+        "id": "volunteers-analytics",
+        "index": "02",
+        "role": "Deputy of the Department of Analytics",
+        "organization": "League of Volunteers of Almaty",
+        "location": "Almaty, Kazakhstan",
+        "period": "2023 – 2024",
+        "focus": "Civic Operations & Engagement Analytics",
+        "highlights": [
+          "Co-led analytics operations tracking and reporting volunteer engagement and outcomes across city-wide social initiatives.",
+          "Supported end-to-end event coordination and logistics across diverse volunteer teams."
+        ],
+        "tags": ["Data Analytics", "Operations", "Event Strategy", "Leadership"]
+      }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "02 / Leadership & Community Impact",
+    "title": "Campus Governance, Global Advocacy & Civic Engagement",
+    "subtitle": "Active contributor across finance forums, international student networks, humanitarian outreach, and structured debate.",
+    "items": [
+      {
+        "id": "kimep-finance-club",
+        "organization": "KIMEP Accounting & Finance Club",
+        "role": "Active Member",
+        "period": "2025 – Present",
+        "category": "Finance & Case Analysis",
+        "description": "Financial case discussions, peer workshops, and professional networking.",
+        "span": "wide",
+        "featured": true
+      },
+      {
+        "id": "unicef",
+        "organization": "UNICEF (United Nations Children's Fund)",
+        "role": "Volunteer",
+        "period": "2025 – Present",
+        "category": "Global Impact",
+        "description": "Volunteer contributing to youth empowerment and humanitarian awareness programs.",
+        "span": "standard",
+        "featured": true
+      },
+      {
+        "id": "tedx-kimep",
+        "organization": "TEDxKIMEP",
+        "role": "Organizing Contributor",
+        "period": "2025 – Present",
+        "category": "Events & Outreach",
+        "description": "Event execution, cross-functional collaboration, and community outreach.",
+        "span": "standard"
+      },
+      {
+        "id": "buddies-kimep",
+        "organization": "Buddies of International Students, KIMEP",
+        "role": "Student Mentor",
+        "period": "2025 – Present",
+        "category": "Cross-Cultural Mentorship",
+        "description": "Cross-cultural onboarding and mentorship for international students.",
+        "span": "standard"
+      },
+      {
+        "id": "lyceum-debate",
+        "organization": "Lyceum №134 Debate Club & Student Ministries",
+        "role": "Debater & Ministry Contributor",
+        "period": "2022 – 2025",
+        "category": "Advocacy & Governance",
+        "description": "Public speaking, structured argumentation, and coordinating educational/environmental initiatives.",
+        "span": "wide"
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "03 / Education & Credentials",
+    "title": "Quantitative Foundation & Verified Proficiency",
+    "subtitle": "Rigorous academic training in corporate finance, big data analytics, and international communication.",
+    "items": [
+      {
+        "id": "kimep",
+        "institution": "KIMEP University",
+        "degree": "Bachelor of Science in Finance",
+        "minor": "Minor in Big Data Analytics",
+        "period": "2025 – Expected 2029",
+        "location": "Almaty, Kazakhstan",
+        "gpa": "3.90 / 4.33",
+        "details": [
+          "GPA: 3.90 / 4.33 — Dean's List trajectory combining financial modeling fundamentals with data analytics coursework.",
+          "Verified C1 English proficiency via IELTS Academic 7.0 (October 2024)."
+        ]
+      },
+      {
+        "id": "lyceum-134",
+        "institution": "Lyceum №134",
+        "degree": "High School Diploma",
+        "period": "2022 – 2025",
+        "location": "Almaty, Kazakhstan",
+        "details": [
+          "Active member of the Debate Club, honing structured argumentation and competitive public speaking.",
+          "Student Government contributor across the Ministries of Education, Ecology, and Visual Communication."
+        ]
+      }
+    ],
+    "ielts": {
+      "overall": 7.0,
+      "maxScore": 9.0,
+      "cefrLevel": "C1 Proficient",
+      "testDate": "Oct 2024",
+      "scores": [
+        { "skill": "Listening", "shortLabel": "L", "score": 8.0, "maxScore": 9.0 },
+        { "skill": "Reading", "shortLabel": "R", "score": 7.0, "maxScore": 9.0 },
+        { "skill": "Writing", "shortLabel": "W", "score": 6.5, "maxScore": 9.0 },
+        { "skill": "Speaking", "shortLabel": "S", "score": 6.5, "maxScore": 9.0 }
+      ]
+    }
+  },
+  "skills": {
+    "technical": [
+      "Microsoft Office Suite (Excel, PowerPoint, Word)",
+      "Google Workspace",
+      "Canva"
+    ],
+    "competencies": [
+      "Financial & Market Research",
+      "Data Analysis",
+      "Critical Thinking",
+      "Presentation Design",
+      "Event Coordination",
+      "Public Speaking"
+    ],
+    "languages": [
+      {
+        "name": "Russian",
+        "proficiency": "Fluent",
+        "detail": "Native / Professional Working Fluency",
+        "levelPercent": 100
+      },
+      {
+        "name": "English",
+        "proficiency": "C1 — IELTS 7.0",
+        "detail": "Academic & Business Proficiency (L: 8.0 · R: 7.0 · W: 6.5 · S: 6.5)",
+        "levelPercent": 86
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "04 / Recruiter & Hiring Contact",
+    "title": "Let's Discuss Finance, FinTech & Analytics Roles",
+    "subtitle": "Available for internships, research collaborations, and analyst programs in corporate finance, FinTech strategy, and data analytics.",
+    "availabilityNote": "Based in Almaty, Kazakhstan (UTC+5) · Open to local & remote internships.",
+    "info": {
+      "email": "kunkayevasabina@gmail.com",
+      "phone": "+7 707 722 0422",
+      "phoneHref": "tel:+77077220422",
+      "linkedin": "https://www.linkedin.com/in/sabina-kunkayeva-758840392",
+      "linkedinHandle": "in/sabina-kunkayeva",
+      "resumeUrl": "/Sabina_Kunkayeva_Resume.pdf",
+      "resumeFilename": "Sabina_Kunkayeva_Resume.pdf",
+      "location": "Almaty, Kazakhstan"
+    }
+  },
+  "footer": {
+    "note": "Sabina Kunkayeva · Finance & Big Data Analytics Portfolio"
+  }
+}

@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #F8F7F4;
+    color: #334155;
+    scroll-padding-top: 5.5rem;
+  }
+
+  /* Targeted text wrapping for editorial legibility (improve-text-layout-and-legibility) */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  p,
+  blockquote,
+  li {
+    text-wrap: pretty;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Visually hidden utility for screen-reader live regions */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* ============================================================================
+   Accessible Navigation Drawer (<dialog> + scroll-snap + scroll-driven fade)
+   ============================================================================ */
+.Drawer {
+  --drawer-width: min(21rem, 82dvw, 100dvw - 24px);
+  --drawer-backdrop: 0;
+
+  inset: 0;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  overflow: visible;
+}
+
+.Drawer::backdrop {
+  background: #0F1E36;
+  opacity: calc(var(--drawer-backdrop) * 0.45);
+}
+
+.Drawer-scroller {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--drawer-width) 100%;
+  overflow-x: scroll;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.Drawer-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Drawer-scroller {
+    scroll-behavior: smooth;
+  }
+}
+
+.Drawer-scroller::after {
+  content: '';
+  scroll-snap-align: end;
+  scroll-initial-target: nearest;
+}
+
+.Drawer-sheet {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100svh;
+  background: #F8F7F4;
+  color: #0F1E36;
+  overflow-y: auto;
+  scroll-snap-align: start;
+  scrollbar-width: none;
+  border-right: 1px solid #E5E7EB;
+  box-shadow: 0 24px 48px -12px rgba(15, 30, 54, 0.18);
+}
+
+.Drawer-sheet::-webkit-scrollbar {
+  display: none;
+}
+
+@supports (animation-timeline: scroll()) {
+  .Drawer {
+    timeline-scope: --drawer-fade;
+    animation: fade-drawer-backdrop linear both;
+    animation-timeline: --drawer-fade;
+  }
+
+  .Drawer-scroller {
+    scroll-timeline: --drawer-fade x;
+  }
+
+  @property --drawer-backdrop {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+
+  @keyframes fade-drawer-backdrop {
+    0% {
+      --drawer-backdrop: 1;
+    }
+    100% {
+      --drawer-backdrop: 0;
+    }
+  }
+}
+
+/* ============================================================================
+   Copy Button confirmation bubble (live region outside button, opacity-driven)
+   ============================================================================ */
+.copy-control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.copy-tip {
+  position: absolute;
+  inset-block-end: calc(100% + 0.5rem);
+  inset-inline-start: 50%;
+  transform: translateX(-50%) translateY(4px);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  padding: 0.3rem 0.65rem;
+  border-radius: 0.375rem;
+  background-color: #0F1E36;
+  color: #F8F7F4;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 20px -4px rgba(15, 30, 54, 0.25);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.copy-button[data-copied] + .copy-tip,
+.copy-button[data-failed] + .copy-tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.copy-button[data-failed] + .copy-tip {
+  background-color: #B91C1C;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .copy-tip {
+    transform: translateX(-50%);
+    transition: opacity 150ms ease;
+  }
+}
+
+/* ============================================================================
+   Validate Input After Interaction (:user-invalid + fallback)
+   ============================================================================ */
+.form-field-input {
+  transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.form-field-error {
+  display: none;
+}
+
+.form-field-input:is(:user-invalid, .user-invalid-fallback) {
+  border-color: #B91C1C;
+  background-color: #FEF2F2;
+}
+
+.form-field-input:is(:user-invalid, .user-invalid-fallback) + .form-field-error {
+  display: flex;
+}
+
+.form-field-input:is(:user-valid, .user-valid-fallback) {
+  border-color: #0F766E;
+}
